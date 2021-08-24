@@ -57,13 +57,13 @@ client.on('message', async message => {
         } else if ((message.content == "f") || (message.content == "F")) {
             message.channel.send(`${message.author} has paid their respects.`)
         } else if (message.content == "shut up egg") {
-            message.channel.send("no u >:(");
+            message.reply("no u >:(");
         }
 
     } else if (message.content.startsWith(prefix)) {
         message.reply("that isnt a valid command");
     } else if (message.content = "@<855690255491137546>") {
-        message.reply(`Hello there! My prefix for this server is ${prefix}.`)
+        message.reply(`Hello there! My prefix for this server is ${prefix}`)
     }
 
 });

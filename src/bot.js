@@ -54,7 +54,7 @@ client.on('message', async message => {
 
         if (dumbQ.includes(message.content)) {
             message.reply('fucktard');
-        } else if (message.content === ("f") || ("F")) {
+        } else if (message.content == "f" || message.content == "F") {
             message.channel.send(`${message.author} has paid their respects.`)
         } else if (message.content == "shut up egg") {
             message.channel.send("no u >:(");

@@ -54,13 +54,11 @@ client.on('message', async message => {
 
         if (dumbQ.includes(message.content)) {
             message.reply('fucktard');
-        } else if (message.content.toLowerCase() == "f") {
+        } else if (message.content == "f" || "F") {
             message.channel.send(`${message.author} has paid their respects.`)
         } else if (message.content == "shut up egg") {
             message.channel.send("no u >:(");
-        } else if (message.content == "@<855690255491137546>") {
-            message.channel.send("Hello there! My global prefix is e!");
-        };
+        }
 
     } else if (message.content.startsWith(prefix)) {
         message.reply("that isnt a valid command");

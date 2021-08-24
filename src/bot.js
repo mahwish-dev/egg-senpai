@@ -62,7 +62,7 @@ client.on('message', async message => {
 
     } else if (message.content.startsWith(prefix)) {
         message.reply("that isnt a valid command");
-    } else if (message.content = "@<855690255491137546>") {
+    } else if (message.content == "@<855690255491137546>") {
         message.reply(`Hello there! My prefix for this server is ${prefix}`)
     }
 

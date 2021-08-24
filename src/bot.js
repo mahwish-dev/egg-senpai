@@ -27,7 +27,7 @@ for (const file of commandFiles) {
 
 
 
-const chat = ["im going to sex you", "mayonnaise is spicy", "how to get embed perms", "f", "shut up eegy", "prefix"]
+const chat = ["im going to sex you", "mayonnaise is spicy", "how to get embed perms", "f", "shut up egg", "prefix", "F"]
 client.on('message', async message => {
     if (message.author.bot) return;
     const prefixDB = await guildMongo.findOne({ guildId: message.guild.id }).catch(err => console.log(err));
@@ -53,7 +53,7 @@ client.on('message', async message => {
         const dumbQ = ["im going to sex you", "mayonnaise is spicy", "how to get embed perms"];
 
         if (dumbQ.includes(message.content)) {
-            message.reply('fucktard');
+            message.reply('man... what.');
         } else if ((message.content == "f") || (message.content == "F")) {
             message.channel.send(`${message.author} has paid their respects.`)
         } else if (message.content == "shut up egg") {
@@ -62,6 +62,8 @@ client.on('message', async message => {
 
     } else if (message.content.startsWith(prefix)) {
         message.reply("that isnt a valid command");
+    } else if (message.content = "@<855690255491137546>") {
+        message.reply(`Hello there! My prefix for this server is ${prefix}.`)
     }
 
 });

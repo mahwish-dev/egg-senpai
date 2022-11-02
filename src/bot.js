@@ -27,7 +27,7 @@ for (const file of commandFiles) {
 
 
 
-const chat = ["im going to sex you", "mayonnaise is spicy", "how to get embed perms", "f", "shut up egg", "prefix", "F"]
+const chat = ["mayonnaise is spicy", "how to get embed perms", "f", "shut up egg", "prefix", "F"]
 client.on('message', async message => {
     if (message.author.bot) return;
     const prefixDB = await guildMongo.findOne({ guildId: message.guild.id }).catch(err => console.log(err));
@@ -50,7 +50,7 @@ client.on('message', async message => {
 
         if (message.content.includes("@here") || message.content.includes("@everyone")) return false;
 
-        const dumbQ = ["im going to sex you", "mayonnaise is spicy", "how to get embed perms"];
+        const dumbQ = [ "mayonnaise is spicy", "how to get embed perms"];
 
         if (dumbQ.includes(message.content)) {
             message.reply('man... what.');
@@ -103,7 +103,7 @@ client.on('ready', async() => {
 
     const Embed = new Discord.MessageEmbed()
         .setColor("RANDOM")
-        .setDescription("Got the bot online! Sorry for any inconvience.")
+        .setDescription("Got the bot online! Sorry for any inconvenience.")
     client.channels.cache.get("866214037909667861").send(Embed);
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setPresence({
